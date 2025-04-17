@@ -1,0 +1,125 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Sección izquierda - contenido */
+  .content {
+    flex: 0.7;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    position: relative;
+    border-right: 1px solid #ddd;
+  }
+  
+  /* Encabezado con logo */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    height: 120px;
+    width: auto;
+    margin-bottom: 32px;
+    opacity: 0.95;
+    transition: all 0.2s ease;
+  }
+  
+  .logo:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+    color: #222;
+  }
+  
+  /* Texto de bienvenida */
+  .intro {
+    max-width: 520px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    z-index: 2;
+    color: #444;
+  }
+  
+  /* Hero (imagen decorativa desactivada) */
+  .hero-image {
+    display: none;
+  }
+  
+  /* Chatbot */
+  .chatbot {
+    flex: 0.3;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+
+  
+  .chatbot {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.06);
+  }
+  
+
+  
+  
+  /* Transiciones suaves */
+  .content, .chatbot {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .content {
+      padding: 30px 25px;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .chatbot {
+      height: 60vh;
+    }
+  
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .intro {
+      font-size: 1rem;
+    }
+  }
+  
