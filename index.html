@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asistente de Tiempo y Asistencia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="header">
+        <img src="Cronos-logo.png" alt="Logo de la empresa" class="logo">
+        <h1>Asistente Virtual de Cronos</h1>
+      </div>
+
+      <div class="intro">
+        <p>Hola 👋 Soy tu asistente para resolver problemas con el reloj.</p>
+        <p>Seleccioná una opción o hablá conmigo directamente usando el chat a la derecha.</p>
+      </div>
+
+      <!-- Imagen profesional o fondo decorativo -->
+      <div class="hero-image"></div>
+    </div>
+
+    <div class="chatbot">
+        <div class="chat-header">
+            <h2>💬 Chat Asistente</h2>
+          </div>
+        <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '680123a0a03b8eb1c45e381c' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    voice: {
+                      url: "https://runtime-api.voiceflow.com"
+                    }
+                  });
+                }
+                v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+          </script>
+    </div>
+  </div>
+</body>
+</html>
