@@ -1,0 +1,2 @@
+# Cronos
+Bot Automatizado Cronos
